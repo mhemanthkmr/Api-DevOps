@@ -8,7 +8,7 @@ a2enmode rewrite
 mkdir /home/htdocs
 mkdir /home/htconfig
 
-ln -s /var/www/html/  /home/htdocs
-ln -s /etc/apache2/sites-available/ /home/htconfig/
+ln -s  /home/htdocs /var/www/html/
+ln -s /home/htconfig/ /etc/apache2/sites-available/
 
 /usr/sbin/apache2ctl -D FOREGROUND
