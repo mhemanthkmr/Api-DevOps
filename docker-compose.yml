@@ -23,9 +23,10 @@ services:
     build: "api/."
     restart: always
     ports:
-      - 80:80
+      - 8000:80
     volumes:
-      - userdata:/root
+      - rootdata:/root
+      - userdata:/home
       - webdata:/var/www/html
     hostname: "api-beta"
 
@@ -33,3 +34,4 @@ volumes:
   my-datavolume:
   webdata:
   userdata:
+  rootdata:
