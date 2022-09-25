@@ -11,7 +11,7 @@ mkdir /home/htconfig
 ln -s  /home/htdocs /var/www/html/
 ln -s /home/htconfig/ /etc/apache2/sites-available/
 
-
+#Added a Completed Setup and Apache start setup
 echo "Completed Initial Setup"
 
 /usr/sbin/apache2ctl -D FOREGROUND
